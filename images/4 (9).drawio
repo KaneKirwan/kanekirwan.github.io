@@ -1,0 +1,39 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.5">
+  <diagram name="Page-1" id="Wk2SZ3Dgn6wj2FgpQmdu">
+    <mxGraphModel dx="2037" dy="1179" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFFFFF);" parent="1" vertex="1">
+          <mxGeometry width="1920" height="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#007FFF);" parent="1" vertex="1">
+          <mxGeometry width="1920" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#1A1A1A);" parent="1" vertex="1">
+          <mxGeometry y="100" width="1920" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-5" value="Web Designer Role" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" parent="1" vertex="1">
+          <mxGeometry x="790" y="20" width="340" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-6" value="Hot Beans Web" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" parent="1" vertex="1">
+          <mxGeometry x="300" y="100" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-7" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Company Profile&amp;nbsp; Our Team&amp;nbsp; Job Openings&amp;nbsp; Apply Now&amp;nbsp; Courses&amp;nbsp; Privacy Policy&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;fontSize=25;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="100" width="900" height="80" as="geometry" />
+        </mxCell>
+        <UserObject label="Web Designer Role&lt;br&gt;Hot Beans Web - Peterborough PE1&lt;br&gt;£24,000 - £30,000 a year - Full-time, Permanent&lt;br&gt;About the Role&lt;br&gt;You&#39;ll be involved in the technical and graphical aspects of pages and will determine the look of the website as well as how it works. You may also be responsible for the maintenance of an existing site. The term web developer is sometimes used interchangeably with web designer, but this is misguided. Web developing is a more specialist role, focusing on the back-end development of a website, using programming languages to make the web design a reality that works well.&lt;br&gt;The growth in touchscreen phones and tablet devices has dictated a new way of designing websites, with the web designer needing to ensure that web pages are responsive no matter what type of device is being used. Therefore, the need to test websites at different stages of design and on a variety of devices, has become an important aspect of the job.&lt;br&gt;We are seeking a talented Web Designer to work with our team of programmers, and to join our ever-expanding creative team.&lt;br&gt;Responsibilities&lt;br&gt;Be working on a multitude of diverse creative projects for different audiences and markets.Will be responsible for the production of digital assets and website designs.Execute all visual design stages from concept to final hand-off to engineering.Conceptualize original website design ideas that bring simplicity and user friendliness to complex roadblocks.Create wireframes, storyboards, user flows, process flows and site maps to communicate interaction and design ideas.Present and defend designs and key deliverables to peers and executive level stakeholders.Establish and promote design guidelines, best practices and standards.&lt;br&gt;Essentials&lt;br&gt;Proficiency in Photoshop, Illustrator or other visual design and wire-framing tools.Proficiency in HTML, CSS and JavaScript for rapid prototyping.Experience working in an Agile/Scrum development process.Excellent visual design skills with sensitivity to user-system interaction.Ability to solve problems creatively and effectively.Up-to-date with the latest Web trends, techniques and technologies.Proven experience as a Digital / Web Designer – ideally with marketing agency experience. A portfolio of work will be required pre-interview.High level of proficiency in Adobe Creative Suite (Photoshop, InDesign, Illustrator and XD).Solid experience in creating wireframes, storyboards, user flows, process flows and site maps.A great team player.Strong verbal and written communication skills.High level of attention to detail and ability to stick to brand guidelines.Proven ability to initiate and manage projects, including working to tight deadlines and managing your own workloads.Demonstrable passion for new technologies and design trends.&lt;br&gt;Desirable&lt;br&gt;Experience using Figma.Experience with client-facing communications.Experience of UX / UI Research and Implementation.&lt;br&gt;What We Offer&lt;br&gt;Competitive salary.Additional holiday to be taken on your birthday.Company bonus schemes.Flexible working – 1 day per week guaranteed from home, if desired.Regular team outings and socials.A relaxed, fun, and dynamic working environment." id="qmOIuZe4hRwivx6xctNg-1">
+          <mxCell style="text;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);fontSize=20;" parent="1" vertex="1">
+            <mxGeometry x="210" y="210" width="1500" height="750" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="6vwyDtYXKGUiSL_Yxjqe-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#1A1A1A);" parent="1" vertex="1">
+          <mxGeometry y="1000" width="1920" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6vwyDtYXKGUiSL_Yxjqe-1" value="© 2025 Hot Beans Web. All rights reserved." style="text;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="760" y="1000" width="400" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <img src="images/logo.png" alt="Hot Beans Web Logo" class="mb-3 logo">
+        <h1 class="display-5">Hot Beans Web</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Hot Beans Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Company Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jobs.html">Job Openings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="apply.html">Apply Now</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section id="profile" class="text-center mb-5">
+            <h2 class="mb-4">Company Profile</h2>
+            <p class="lead">Hot Beans Web is a leading web development company specializing in innovative solutions for businesses worldwide.</p>
+            <img src="images/Offices.jpg" alt="Company Offices" class="img-fluid rounded shadow">
+        </section>
+
+        <section id="team" class="mb-5">
+            <h2 class="text-center mb-4">Meet Our Team</h2>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <img src="images/Daniel_Lecroy.jpg" alt="Daniel Lecroy" class="img-fluid rounded-circle mb-3 team-photo">
+                    <h5>Daniel Lecroy</h5>
+                    <p class="text-muted">Junior Web Developer</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/Li Chang.PNG" alt="Li Chang" class="img-fluid rounded-circle mb-3 team-photo">
+                    <h5>Li Chang</h5>
+                    <p class="text-muted">Junior Web Developer</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/Rosa_DeCastello.jpg" alt="Rosa DeCastello" class="img-fluid rounded-circle mb-3 team-photo">
+                    <h5>Rosa DeCastello</h5>
+                    <p class="text-muted">Junior Web Developer</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="jobs" class="text-center mb-5">
+            <h2 class="mb-4">Job Openings</h2>
+            <p class="lead">Explore exciting opportunities to join our team:</p>
+            <ul class="list-unstyled">
+                <li><a href="developer.html" class="text-decoration-none">Web Developer</a></li>
+                <li><a href="designer.html" class="text-decoration-none">Web Designer</a></li>
+            </ul>
+        </section>
+
+        <section id="apply" class="mb-5">
+            <h2 class="text-center mb-4">Apply Now</h2>
+            <form action="#" method="post" class="p-4 border rounded shadow">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="resume" class="form-label">Upload Resume</label>
+                    <input type="file" class="form-control" id="resume" name="resume" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+            </form>
+        </section>
+
+        <section id="courses" class="text-center mb-5">
+            <h2 class="mb-4">Recommended Courses</h2>
+            <p class="lead">Enhance your skills with these courses:</p>
+            <ul class="list-unstyled">
+                <li><a href="courses.html" class="text-decoration-none">Web Development Courses</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Hot Beans Web. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

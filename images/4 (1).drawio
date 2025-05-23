@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.5">
+  <diagram name="Page-1" id="Wk2SZ3Dgn6wj2FgpQmdu">
+    <mxGraphModel dx="1901" dy="1097" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFFFFF);" vertex="1" parent="1">
+          <mxGeometry width="1920" height="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#007FFF);" vertex="1" parent="1">
+          <mxGeometry width="1920" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#1A1A1A);" vertex="1" parent="1">
+          <mxGeometry y="220" width="1920" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-4" value="Logo" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fillColor=light-dark(#FFFFFF,#00994D);" vertex="1" parent="1">
+          <mxGeometry x="910" y="20" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-5" value="Hot Beans Web" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="850" y="140" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-6" value="Hot Beans Web" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="300" y="220" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-7" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Company Profile&amp;nbsp; Our Team&amp;nbsp; Job Openings&amp;nbsp; Apply Now&amp;nbsp; Courses&amp;nbsp; Privacy Policy&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;fontSize=25;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="220" width="900" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-8" value="Company Profile&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Hot Beans Web is a leading web development company specializing in innovative solutions for businesses worldwide.&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);align=center;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="435" y="340" width="1050" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-9" value="Offices" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="410" y="500" width="1100" height="570" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

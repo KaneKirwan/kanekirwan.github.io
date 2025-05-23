@@ -1,0 +1,39 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.5">
+  <diagram name="Page-1" id="Wk2SZ3Dgn6wj2FgpQmdu">
+    <mxGraphModel dx="2037" dy="1179" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFFFFF);" parent="1" vertex="1">
+          <mxGeometry width="1920" height="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#007FFF);" parent="1" vertex="1">
+          <mxGeometry width="1920" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#1A1A1A);" parent="1" vertex="1">
+          <mxGeometry y="100" width="1920" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-5" value="Privacy Policy" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" parent="1" vertex="1">
+          <mxGeometry x="790" y="20" width="340" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-6" value="Hot Beans Web" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" parent="1" vertex="1">
+          <mxGeometry x="300" y="100" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-7" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Company Profile&amp;nbsp; Our Team&amp;nbsp; Job Openings&amp;nbsp; Apply Now&amp;nbsp; Courses&amp;nbsp; Privacy Policy&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;fontSize=25;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="100" width="900" height="80" as="geometry" />
+        </mxCell>
+        <UserObject label="The policy: This privacy policy is for this website;&lt;br&gt;Policy key definitions:&lt;br&gt;&quot;I&quot;, &quot;our&quot;, &quot;us&quot;, or &quot;we&quot; refer to the business, Jamie King Media.&quot;you&quot;, &quot;the user&quot; refer to the person(s) using this website.GDPR means General Data Protection Act.PECR means Privacy &amp;amp; Electronic Communications Regulation.Cookies mean small files stored on a users computer or device.&lt;br&gt;Processing of your personal data&lt;br&gt;Under the GDPR (General Data Protection Regulation) we control and process any personal information you provide to us electronically in the following ways. Unless otherwise defined, we only process your personal data for accounts &amp;amp; records, advertising, marketing, PR or staff administration (where applicable) purposes;&lt;br&gt;We use the contract lawful basis under the GDPR for the processing of your information to provide you with details about our services, supplying a quote or estimate. We shall continue to process your information until the contract between us ends or is terminated under any contract terms. Your personal data under the contract lawful basis is not shared with any third parties.&lt;br&gt;We use the consent lawful basis under the GDPR for the processing of your information when you explicitly consent to subscribe to our email mailing list. Your information is used to send you marketing messages within the scope outlined to you at the point of subscription. We collect the following information from you;&lt;br&gt;Your I.P addressFull NameEmail AddressResume (file upload)&lt;br&gt;We use the legitimate interests lawful basis under the GDPR for the processing of your information where a shared interest exists between us. Your information is not shared with any third parties. We only store this information for as long as a legitimate interest exists.&lt;br&gt;Any personal information processed is done so securely with protective measures in place to prevent data breach. This includes data saved to computers, mobile devices, phones, laptops or tablets. Protective measures include passwords, pass codes, finger print recognition software and fire wall technology.&lt;br&gt;You can unsubscribe or manage your personal information at any time through an online system, which you will find links to in any subscription confirmation email or marketing message we sent to you since. We will continue to process your information under you withdraw consent or it is determined your consent no longer exists. Your personal data under the consent lawful basis is not shared with any third parties.&lt;br&gt;If, as determined by us, the lawful basis upon which we process your personal information changes, we will notify you about the change and any new lawful basis to be used if required. We shall stop processing your personal information if the lawful basis used is no longer relevant.&lt;br&gt;Your individual rights&lt;br&gt;Under the GDPR your rights are as follows. You can read more about your rights in details here;&lt;br&gt;the right to be informed;the right of access;the right to rectification;the right to erasure;the right to restrict processing;the right to data portability;the right to object; andthe right not to be subject to automated decision-making including profiling.&lt;br&gt;You also have the right to complain to the ICO [www.ico.org.uk] if you feel there is a problem with the way we are handling your data.&lt;br&gt;We handle subject access requests in accordance with the GDPR." id="qmOIuZe4hRwivx6xctNg-1">
+          <mxCell style="text;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);fontSize=20;" parent="1" vertex="1">
+            <mxGeometry x="210" y="210" width="1500" height="750" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="6vwyDtYXKGUiSL_Yxjqe-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#1A1A1A);" parent="1" vertex="1">
+          <mxGeometry y="1000" width="1920" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6vwyDtYXKGUiSL_Yxjqe-1" value="© 2025 Hot Beans Web. All rights reserved." style="text;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="760" y="1000" width="400" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

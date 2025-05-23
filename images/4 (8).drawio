@@ -1,0 +1,39 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.5">
+  <diagram name="Page-1" id="Wk2SZ3Dgn6wj2FgpQmdu">
+    <mxGraphModel dx="2037" dy="1179" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFFFFF);" parent="1" vertex="1">
+          <mxGeometry width="1920" height="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#007FFF);" parent="1" vertex="1">
+          <mxGeometry width="1920" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#1A1A1A);" parent="1" vertex="1">
+          <mxGeometry y="100" width="1920" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-5" value="Web Developer Role" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" parent="1" vertex="1">
+          <mxGeometry x="790" y="20" width="340" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-6" value="Hot Beans Web" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" parent="1" vertex="1">
+          <mxGeometry x="300" y="100" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2mj4cjvI3WKVShRjhSFl-7" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Company Profile&amp;nbsp; Our Team&amp;nbsp; Job Openings&amp;nbsp; Apply Now&amp;nbsp; Courses&amp;nbsp; Privacy Policy&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;fontSize=25;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="100" width="900" height="80" as="geometry" />
+        </mxCell>
+        <UserObject label="Web Developer&#xa;Hot Beans Web - Peterborough PE1&#xa;£28,000 - £35,000 a year - Full-time, Permanent&#xa;About the Role&#xa;We are now looking to build our in-house systems development team with the appointment of a junior web developer. The successful candidate will help develop back and front-end systems for our clients including eCommerce and B2B systems where you can see your ideas come to life. As a small development team, you will have the opportunity to work across multiple technical domains developing a breadth of skills.&#xa;Responsibilities&#xa;Create reliable and high-performing web-based applications and services.Focus on the underlying software and databases while collaborating with other teams on interface and visual design.Establish and promote design guidelines, best practices, and standards.&#xa;Essentials&#xa;Experience with HTML, CSS, &amp;amp; JavaScript.Exposure or experience with one or more procedural programming languages, such as PHP, Java, C# (.Net), Python, CFML.Exposure or experience with one or more associated technologies:&#xa;Database technologies (SQL Server, MySQL).Windows Server or Linux Distributions.Development Tools (IDEs, CLIs, Toolchains).Git (or another VCS).An organised and pragmatic approach to solving problems.The ability to work as part of a team including both technical and non-technical members.Proven ability to initiate and manage projects, including working to tight deadlines and managing your own workloads.Demonstrable passion for new technologies and design trends.&#xa;Desirable&#xa;In addition to the above, the ideal candidate would have experience working with the Salesforce platform.&#xa;What We Offer&#xa;Competitive salary.Additional holiday to be taken on your birthday.Company bonus schemes.Flexible working – 1 day per week guaranteed from home, if desired.Regular team outings and socials.A relaxed, fun, and dynamic working environment.&#xa;Job Details&#xa;Job Types: Full-time, PermanentSalary: £24,000.00-£30,000.00 per yearAdditional pay:&#xa;Bonus schemePerformance bonusYearly bonus&#xa;Benefits&#xa;Casual dressCompany eventsWork from home&#xa;Schedule&#xa;Monday to Friday" id="qmOIuZe4hRwivx6xctNg-1">
+          <mxCell style="text;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);fontSize=20;" parent="1" vertex="1">
+            <mxGeometry x="210" y="210" width="1500" height="750" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="6vwyDtYXKGUiSL_Yxjqe-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#1A1A1A);" parent="1" vertex="1">
+          <mxGeometry y="1000" width="1920" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6vwyDtYXKGUiSL_Yxjqe-1" value="© 2025 Hot Beans Web. All rights reserved." style="text;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="760" y="1000" width="400" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
