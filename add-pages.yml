@@ -1,0 +1,447 @@
+# Add remaining pages + CSS using the repository's GITHUB_TOKEN.
+# Usage: add this file to your repo, then go to Actions -> "Add remaining pages" -> Run workflow.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  add-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Create directories
+        run: |
+          mkdir -p pages assets/css
+
+      - name: Add stylesheet
+        run: |
+          cat > assets/css/styles.css <<'CSS'
+:root{
+  --bg:#ffffff;
+  --muted:#6b7280;
+  --accent:#0d6efd;
+  --max-width:1100px;
+  --radius:10px;
+  --container-pad:24px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;line-height:1.5;color:#111827;background:var(--bg)}
+.container{max-width:var(--max-width);margin:0 auto;padding:var(--container-pad)}
+.site-header{border-bottom:1px solid #eef2f7;background:#fff}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:16px 24px}
+.brand{font-weight:700;color:#111827;text-decoration:none;font-size:1.125rem}
+.main-nav a{margin-left:16px;color:var(--muted);text-decoration:none}
+.hero{padding:48px 0}
+.hero h1{font-size:2rem;margin:0}
+.lead{color:var(--muted);margin-top:8px}
+.cta{display:inline-block;margin-top:12px;padding:10px 16px;background:var(--accent);color:white;border-radius:8px;text-decoration:none}
+.overview{padding:24px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#fff;padding:16px;border-radius:var(--radius);box-shadow:0 1px 3px rgba(15,23,42,0.04)}
+.feature-list{list-style:none;padding:0;margin:0}
+.feature-list li{padding:8px 0}
+.feature-list a{text-decoration:none;color:var(--accent)}
+.site-footer{border-top:1px solid #eef2f7;padding:20px 0;margin-top:48px;color:var(--muted)}
+@media (max-width:700px){.main-nav{display:none}}
+CSS
+
+      - name: Add pages/design.html
+        run: |
+          cat > pages/design.html <<'HTML'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Design — 10 tools & ways to use them</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Google AdSense Auto ads script (place on every page) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6401689986828218"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="brand" href="/">Kane Kirwan</a><nav class="main-nav"><a href="/">Home</a><a href="/pages/development.html">Development</a><a href="/pages/design.html">Design</a></nav></div></header>
+  <main class="container">
+    <h1>Design — 10 tools & ways to use them</h1>
+    <p class="lead">Practical ways to use common design tools effectively.</p>
+    <ol>
+      <li><strong>Figma</strong> — Rapid prototyping and design systems; use components & variants to maintain consistency.</li>
+      <li><strong>Sketch</strong> — Pixel-accurate UI design; use symbols and shared libraries for team consistency.</li>
+      <li><strong>Adobe XD</strong> — Interactive prototypes and voice-enabled interactions; leverage plugins to export assets.</li>
+      <li><strong>Figma Plugins</strong> — Automate repetitive tasks (tokens, content, icon swaps) to speed up handoff.</li>
+      <li><strong>Storybook</strong> — Build and display UI components in isolation for designers and engineers to collaborate.</li>
+      <li><strong>Zeplin</strong> — Provide specs, assets, and measurements for developers from designs.</li>
+      <li><strong>Principle / Framer</strong> — High-fidelity interactions and micro-interactions for usability testing.</li>
+      <li><strong>Notion</strong> — Design documentation and pattern libraries with examples and usage guidance.</li>
+      <li><strong>Google Fonts / Variable Fonts</strong> — Use variable fonts to reduce HTTP requests and scale typography responsively.</li>
+      <li><strong>Accessibility tools</strong> (axe, Lighthouse) — Integrate checks into design review to catch color contrast and semantics early.</li>
+    </ol>
+  </main>
+  <footer class="site-footer"><div class="container">© 2025 Kane Kirwan</div></footer>
+</body>
+</html>
+HTML
+
+      - name: Add pages/development.html
+        run: |
+          cat > pages/development.html <<'HTML'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Development — 10 approaches & tools</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Google AdSense Auto ads script (place on every page) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6401689986828218"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="brand" href="/">Kane Kirwan</a><nav class="main-nav"><a href="/">Home</a><a href="/pages/development.html">Development</a><a href="/pages/design.html">Design</a></nav></div></header>
+  <main class="container">
+    <h1>Development — 10 approaches & tools</h1>
+    <p class="lead">Patterns and tools to build maintainable software.</p>
+    <ol>
+      <li><strong>Git + GitHub</strong> — Branching and PR workflow; use protected branches and CI for quality.</li>
+      <li><strong>VS Code</strong> — Editor with extensions for linting, formatting, and remote development.</li>
+      <li><strong>Node.js & npm/Yarn</strong> — Package management and build tooling automation.</li>
+      <li><strong>TypeScript</strong> — Add static types to reduce runtime errors and improve tooling.</li>
+      <li><strong>ESLint & Prettier</strong> — Enforce consistent style and catch mistakes early with CI checks.</li>
+      <li><strong>Testing (Jest, Playwright)</strong> — Unit and end-to-end tests to maintain regressions and confidence.</li>
+      <li><strong>REST & GraphQL</strong> — Choose API style per use-case; GraphQL for flexible clients.</li>
+      <li><strong>CI/CD</strong> (GitHub Actions) — Automate builds, tests, and deployments on merge.</li>
+      <li><strong>Docker</strong> — Containerize services for consistent environments across dev and prod.</li>
+      <li><strong>Monitoring (Sentry, Prometheus)</strong> — Track errors and performance to drive improvements.</li>
+    </ol>
+  </main>
+  <footer class="site-footer"><div class="container">© 2025 Kane Kirwan</div></footer>
+</body>
+</html>
+HTML
+
+      - name: Add pages/data.html
+        run: |
+          cat > pages/data.html <<'HTML'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Data — 10 tools & ways to use them</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Google AdSense Auto ads script (place on every page) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6401689986828218"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="brand" href="/">Kane Kirwan</a><nav class="main-nav"><a href="/">Home</a><a href="/pages/data.html">Data</a><a href="/pages/development.html">Development</a></nav></div></header>
+  <main class="container">
+    <h1>Data — 10 tools & ways to use them</h1>
+    <p class="lead">Capture, analyze, and visualize data effectively.</p>
+    <ol>
+      <li><strong>SQL (Postgres)</strong> — Structured queries and analytical reports; use views for common logic.</li>
+      <li><strong>Python (pandas)</strong> — Data cleaning and ETL for reproducible workflows.</li>
+      <li><strong>Jupyter Notebooks</strong> — Exploratory analysis and shareable reports with code + narrative.</li>
+      <li><strong>Airflow / Prefect</strong> — Orchestrate ETL pipelines and scheduled jobs reliably.</li>
+      <li><strong>Looker / Metabase</strong> — Business-facing dashboards and self-serve analytics.</li>
+      <li><strong>BigQuery / Redshift</strong> — Scalable data warehouses for analytics at scale.</li>
+      <li><strong>Data validation (Great Expectations)</strong> — Assert data quality as part of pipelines.</li>
+      <li><strong>Visualization (D3, Vega)</strong> — Custom visualizations for interactive insights.</li>
+      <li><strong>ML frameworks (scikit-learn, TensorFlow)</strong> — Prototype models and evaluate performance.</li>
+      <li><strong>Instrumentation</strong> — Log and metric strategy to measure product impact and experiments.</li>
+    </ol>
+  </main>
+  <footer class="site-footer"><div class="container">© 2025 Kane Kirwan</div></footer>
+</body>
+</html>
+HTML
+
+      - name: Add pages/productivity.html
+        run: |
+          cat > pages/productivity.html <<'HTML'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Productivity — 10 workflows & tools</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Google AdSense Auto ads script (place on every page) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6401689986828218"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="brand" href="/">Kane Kirwan</a><nav class="main-nav"><a href="/">Home</a><a href="/pages/productivity.html">Productivity</a><a href="/pages/automation.html">Automation</a></nav></div></header>
+  <main class="container">
+    <h1>Productivity — 10 workflows & tools</h1>
+    <p class="lead">Work smarter with repeatable systems and the right tools.</p>
+    <ol>
+      <li><strong>Notion / Roam</strong> — Centralize notes, docs, and project plans with templates.</li>
+      <li><strong>Todoist / Things</strong> — Task management with prioritization and recurring tasks.</li>
+      <li><strong>Calendar blocking</strong> — Schedule deep work and protect focus time.</li>
+      <li><strong>Keyboard shortcuts & snippets</strong> — Save time on repetitive text and actions.</li>
+      <li><strong>Automations (IFTTT, Zapier)</strong> — Connect apps to remove manual steps.</li>
+      <li><strong>Time tracking</strong> — Measure where time is spent to optimize processes.</li>
+      <li><strong>Meeting templates</strong> — Use agendas and clear outcomes to keep meetings efficient.</li>
+      <li><strong>Regular retrospectives</strong> — Iterate on team processes and remove friction.</li>
+      <li><strong>Focus tools</strong> (Pomodoro apps) — Break work into focused sprints and rest intervals.</li>
+      <li><strong>Documentation-as-code</strong> — Keep docs versioned with code and in CI checks.</li>
+    </ol>
+  </main>
+  <footer class="site-footer"><div class="container">© 2025 Kane Kirwan</div></footer>
+</body>
+</html>
+HTML
+
+      - name: Add pages/marketing.html
+        run: |
+          cat > pages/marketing.html <<'HTML'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Marketing — 10 tactics & tools</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Google AdSense Auto ads script (place on every page) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6401689986828218"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="brand" href="/">Kane Kirwan</a><nav class="main-nav"><a href="/">Home</a><a href="/pages/marketing.html">Marketing</a><a href="/pages/writing.html">Writing</a></nav></div></header>
+  <main class="container">
+    <h1>Marketing — 10 tactics & tools</h1>
+    <p class="lead">Practical marketing ideas, channels, and supporting tools.</p>
+    <ol>
+      <li><strong>Content calendar</strong> — Plan topics and repurpose across channels for consistent reach.</li>
+      <li><strong>SEO tools (Ahrefs, Google Search Console)</strong> — Track keywords and performance to drive organic traffic.</li>
+      <li><strong>Email automation (Mailchimp, ConvertKit)</strong> — Nurture leads with segmented sequences.</li>
+      <li><strong>Social scheduling</strong> — Batch content and schedule to maintain presence efficiently.</li>
+      <li><strong>Analytics (Google Analytics, GA4)</strong> — Measure funnels and conversion rates carefully.</li>
+      <li><strong>A/B testing</strong> — Iterate landing pages and CTAs to improve conversions.</li>
+      <li><strong>Customer interviews</strong> — Qualitative research to inform messaging and positioning.</li>
+      <li><strong>Referral programs</strong> — Incentivize advocates to grow organically.</li>
+      <li><strong>Marketing automation (HubSpot)</strong> — Centralize leads, scoring, and lifecycle orchestration.</li>
+      <li><strong>Creative assets library</strong> — Maintain on-brand templates and approved media for fast production.</li>
+    </ol>
+  </main>
+  <footer class="site-footer"><div class="container">© 2025 Kane Kirwan</div></footer>
+</body>
+</html>
+HTML
+
+      - name: Add pages/writing.html
+        run: |
+          cat > pages/writing.html <<'HTML'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Writing — 10 techniques & tools</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Google AdSense Auto ads script (place on every page) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6401689986828218"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="brand" href="/">Kane Kirwan</a><nav class="main-nav"><a href="/">Home</a><a href="/pages/writing.html">Writing</a><a href="/pages/marketing.html">Marketing</a></nav></div></header>
+  <main class="container">
+    <h1>Writing — 10 techniques & tools</h1>
+    <p class="lead">Clear, effective writing practices and the tools to support them.</p>
+    <ol>
+      <li><strong>Outlines</strong> — Structure ideas first to keep writing focused and scannable.</li>
+      <li><strong>Headlines and ledes</strong> — Hook readers early with clear value and benefit statements.</li>
+      <li><strong>Style guide</strong> — Maintain consistent voice and formatting across content.</li>
+      <li><strong>Grammar tools (Grammarly)</strong> — Catch clarity and grammar issues quickly.</li>
+      <li><strong>Readable formatting</strong> — Use subheads, bullets, and short paragraphs for scanability.</li>
+      <li><strong>Templates</strong> — Reuse templates for blog posts, case studies, and release notes.</li>
+      <li><strong>Content editing workflow</strong> — Peer reviews and version control for major pieces.</li>
+      <li><strong>CMS (Static site)</strong> — Publish content with a simple workflow, prebuilt templates, and CI deploys.</li>
+      <li><strong>SEO copy basics</strong> — Target a single keyword cluster and write for humans first.</li>
+      <li><strong>Republishing strategy</strong> — Update and repromote high-value content instead of constantly creating new pieces.</li>
+    </ol>
+  </main>
+  <footer class="site-footer"><div class="container">© 2025 Kane Kirwan</div></footer>
+</body>
+</html>
+HTML
+
+      - name: Add pages/automation.html
+        run: |
+          cat > pages/automation.html <<'HTML'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Automation — 10 ideas & tools</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Google AdSense Auto ads script (place on every page) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6401689986828218"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="brand" href="/">Kane Kirwan</a><nav class="main-nav"><a href="/">Home</a><a href="/pages/automation.html">Automation</a><a href="/pages/productivity.html">Productivity</a></nav></div></header>
+  <main class="container">
+    <h1>Automation — 10 ideas & tools</h1>
+    <p class="lead">Automate repetitive work to reduce errors and free creative time.</p>
+    <ol>
+      <li><strong>CI pipelines</strong> — Run tests and builds automatically on PRs to prevent regressions.</li>
+      <li><strong>Scheduled data jobs</strong> — Nightly ETL and report generation using Airflow or cron-based jobs.</li>
+      <li><strong>Zapier / Make.com</strong> — Glue apps together for non-technical automation needs.</li>
+      <li><strong>GitHub Actions</strong> — Automate code quality checks, dependency updates, and releases.</li>
+      <li><strong>Auto-formatting</strong> — Save time on style reviews by enforcing formatting in pre-commit hooks.</li>
+      <li><strong>ChatOps</strong> — Expose operational tasks to chat for transparent, auditable actions.</li>
+      <li><strong>Automated backups</strong> — Regular snapshots of data and infrastructure state for resilience.</li>
+      <li><strong>Scheduled monitoring</strong> — Synthetic checks and uptime tests to catch outages early.</li>
+      <li><strong>Template generators</strong> — Scaffold projects, docs, and components consistently with templates.</li>
+      <li><strong>Onboarding scripts</strong> — Automate new-hire setup for tools and development environments.</li>
+    </ol>
+  </main>
+  <footer class="site-footer"><div class="container">© 2025 Kane Kirwan</div></footer>
+</body>
+</html>
+HTML
+
+      - name: Add pages/devops.html
+        run: |
+          cat > pages/devops.html <<'HTML'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DevOps — 10 practices & tools</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Google AdSense Auto ads script (place on every page) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6401689986828218"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="brand" href="/">Kane Kirwan</a><nav class="main-nav"><a href="/">Home</a><a href="/pages/devops.html">DevOps</a><a href="/pages/automation.html">Automation</a></nav></div></header>
+  <main class="container">
+    <h1>DevOps — 10 practices & tools</h1>
+    <p class="lead">Operational practices for shipping reliable systems.</p>
+    <ol>
+      <li><strong>Infrastructure as Code (Terraform)</strong> — Define infra with code for repeatability.</li>
+      <li><strong>Immutable infrastructure</strong> — Replace instead of patch to reduce config drift.</li>
+      <li><strong>Blue/green & canary deploys</strong> — Reduce risk of releases by gradual rollouts.</li>
+      <li><strong>Secrets management</strong> — Centralize and rotate secrets using vaults or cloud secrets.</li>
+      <li><strong>Observability</strong> — Combine logs, traces, and metrics for full visibility.</li>
+      <li><strong>Runbooks</strong> — Document common incidents and remediation steps for responders.</li>
+      <li><strong>Scalability planning</strong> — Use autoscaling and capacity tests to prepare for demand.</li>
+      <li><strong>Cost monitoring</strong> — Track and allocate cloud spend to reduce waste.</li>
+      <li><strong>Cluster orchestration (Kubernetes)</strong> — Manage containerized workloads reliably.</li>
+      <li><strong>Disaster recovery</strong> — Define RTO/RPO and rehearse recovery procedures.</li>
+    </ol>
+  </main>
+  <footer class="site-footer"><div class="container">© 2025 Kane Kirwan</div></footer>
+</body>
+</html>
+HTML
+
+      - name: Add pages/multimedia.html
+        run: |
+          cat > pages/multimedia.html <<'HTML'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Multimedia — 10 tools & techniques</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Google AdSense Auto ads script (place on every page) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6401689986828218"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="brand" href="/">Kane Kirwan</a><nav class="main-nav"><a href="/">Home</a><a href="/pages/multimedia.html">Multimedia</a><a href="/pages/design.html">Design</a></nav></div></header>
+  <main class="container">
+    <h1>Multimedia — 10 tools & techniques</h1>
+    <p class="lead">Create and optimize images, audio, and video for the web.</p>
+    <ol>
+      <li><strong>Figma / Sketch</strong> — Design mockups and export optimized assets for web use.</li>
+      <li><strong>Adobe Premiere / Final Cut</strong> — Edit video content with color grading and cuts.</li>
+      <li><strong>HandBrake</strong> — Compress videos for web delivery while keeping quality.</li>
+      <li><strong>Audacity / Adobe Audition</strong> — Clean audio, remove noise, and normalize levels.</li>
+      <li><strong>Image compression (Squoosh)</strong> — Reduce file sizes with modern formats (WebP, AVIF).</li>
+      <li><strong>CDN delivery</strong> — Serve media through a CDN for fast global playback.</li>
+      <li><strong>Subtitles & captions</strong> — Improve accessibility and SEO for video content.</li>
+      <li><strong>Lazy-loading</strong> — Defer offscreen media to speed initial page loads.</li>
+      <li><strong>Responsive media</strong> — Use srcset and picture elements for different device sizes.</li>
+      <li><strong>Versioned assets</strong> — Cache-bust with filenames to ensure users get updates reliably.</li>
+    </ol>
+  </main>
+  <footer class="site-footer"><div class="container">© 2025 Kane Kirwan</div></footer>
+</body>
+</html>
+HTML
+
+      - name: Add pages/learning.html
+        run: |
+          cat > pages/learning.html <<'HTML'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Learning — 10 resources & strategies</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Google AdSense Auto ads script (place on every page) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6401689986828218"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="brand" href="/">Kane Kirwan</a><nav class="main-nav"><a href="/">Home</a><a href="/pages/learning.html">Learning</a><a href="/pages/writing.html">Writing</a></nav></div></header>
+  <main class="container">
+    <h1>Learning — 10 resources & strategies</h1>
+    <p class="lead">How to learn effectively and which resources to rely on.</p>
+    <ol>
+      <li><strong>Project-based learning</strong> — Build small projects to apply concepts practically.</li>
+      <li><strong>Deliberate practice</strong> — Focus on weaknesses with targeted exercises.</li>
+      <li><strong>Online courses</strong> (Coursera, Udemy) — Structured paths for new topics.</li>
+      <li><strong>Reading lists</strong> — Curate books and articles for deep understanding.</li>
+      <li><strong>Community</strong> — Join study groups or forums to get feedback and accountability.</li>
+      <li><strong>Mentorship</strong> — Pair with experienced people for faster learning and shortcuts.</li>
+      <li><strong>Cheat sheets & summaries</strong> — Keep concise references for recurring tasks.</li>
+      <li><strong>Teach others</strong> — Explaining concepts reinforces your own understanding.</li>
+      <li><strong>Scheduled review</strong> — Use spaced repetition for long-term retention.</li>
+      <li><strong>Playlists & curated tutorials</strong> — Follow a progressive path from basics to advanced topics.</li>
+    </ol>
+  </main>
+  <footer class="site-footer"><div class="container">© 2025 Kane Kirwan</div></footer>
+</body>
+</html>
+HTML
+
+      - name: Commit and push
+        env:
+          GIT_COMMITTER_NAME: "github-actions[bot]"
+          GIT_COMMITTER_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
+        run: |
+          git add assets/css/styles.css pages/*.html || true
+          git status --porcelain
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Add CSS and pages with AdSense Auto ads script in head"
+            git push origin HEAD:main
+          fi
